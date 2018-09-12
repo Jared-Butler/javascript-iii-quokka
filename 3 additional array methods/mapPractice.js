@@ -3,6 +3,12 @@ var answers = ["yes", "no", "yes", "no", "no", "no"]
 //map over answers
 //change yes into no and no into yes
 
+let newAnswers = answers.map( function(answer, index, array){
+  return answer === 'yes' ? answer = 'no' : answer = 'yes';
+});
+
+newAnswers;
+
 //DESIRED RESULT = ["no", "yes", "no", "yes", "yes", "yes"]
 
 
@@ -17,8 +23,10 @@ var employees = [
 //split on the - in name and turn name into first_name and last_name
 //save it to a new array variable
 
+// employees.forEach((employee,i) => employees[i].pay = employees[i].pay + 3 );
 
-
+var payBump = employees.map( (employee, i) => emplyoyee = employees[i].pay +3);  //Ask for clarifcation as to why this worked this way.
+ payBump;
 
 //DESIRED RESULT = 
 /*

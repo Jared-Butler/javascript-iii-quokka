@@ -9,6 +9,12 @@ var drink = {
 //if the value is 'orange' change it to 'cherry'
 
 
+for (var key in drink) {
+    key;
+};
+for (var key in drink) {
+    console.log(drink[key])
+};
 
 //Write a function, called 'checkValid', that takes in an object like drink 
 //loop over the object and check if values are falsy
